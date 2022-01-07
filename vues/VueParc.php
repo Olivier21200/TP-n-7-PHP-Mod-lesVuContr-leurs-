@@ -2,7 +2,7 @@
 
 require_once('../modeles/ordinateurs.php');
 
-class VueParc 
+class VueParc extends vue
 {
     private ordinateurs $ordinateurs;
 
@@ -16,6 +16,12 @@ class VueParc
     public function ordinateurs()
     {
         return $this->ordinateurs;
+    }
+
+     // affichera « Bienvenue dans le corp de la page html
+    public function afficherCorps() 
+    {
+        echo"<p>Bienvenue</p>";
     }
 
 }
