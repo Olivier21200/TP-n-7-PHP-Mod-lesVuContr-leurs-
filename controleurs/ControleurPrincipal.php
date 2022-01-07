@@ -3,7 +3,7 @@ require_once("../vues/vue.php");
 
 class ControleurPrincipal 
 {
-    private vue $_vue = new vue("") ; // attribut « vue »
+    private $_vue = new vue("") ; // attribut « vue »
 
 
      //Constructeur
@@ -17,7 +17,7 @@ class ControleurPrincipal
      //Fonction qui pour le moment ne fais rien
      public function traiterDonneesGet()
      {
-         
+         $this->_vue = new VueAccueil("accueil");
      }
 
       //Fonction qui affiche ok
