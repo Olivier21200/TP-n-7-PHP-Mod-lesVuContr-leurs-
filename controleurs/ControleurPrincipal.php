@@ -3,13 +3,13 @@ require_once("../vues/vue.php");
 
 class ControleurPrincipal 
 {
-    private vue $_vue; // attribut « vue »
+    private vue $_vue = new vue() ; // attribut « vue »
 
 
      //Constructeur
-     public function __construct(/*$vue*/) 
+     public function __construct() 
      {
-        // $this->_vue=$vue;
+    
         $this->traiterDonneesGet();//appel de la fonction 1,
         $this->afficher();//appel de la fonction 2;
      }
