@@ -13,14 +13,25 @@ class vue
      
      // fournira le code d’entête d’une page HTML jusqu’à la balise <body>
      public function afficherEntete() 
-     {
-         
+     {   
+        echo
+        ('
+            <!DOCTYPE html>
+            <html lang="fr">
+            <head>
+               <meta charset="UTF-8">
+               <meta http-equiv="X-UA-Compatible" content="IE=edge">
+               <meta name="viewport" content="width=device-width, initial-scale=1.0">
+               <title>'.$this->titre().'</title>
+            </head>
+            <body>'
+         );
      }
 
      // fournira le code de pied d’une page HTML à partir de la balise </body> inclue
      public function afficherPied() 
      {
-
+         echo ('</body></html>');
      }
 
      // affichera « Page introuvable
