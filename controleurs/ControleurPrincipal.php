@@ -6,7 +6,7 @@ class ControleurPrincipal
 
 
      //Constructeur
-     public function __construct($vue) 
+     public function __construct(/*$vue*/) 
      {
         // $this->_vue=$vue;
         $this->traiterDonneesGet();//appel de la fonction 1,
