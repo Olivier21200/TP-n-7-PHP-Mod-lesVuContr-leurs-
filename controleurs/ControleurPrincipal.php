@@ -1,8 +1,9 @@
 <?php 
+require_once("../vues/vue.php");
 
 class ControleurPrincipal 
 {
-    private $_vue; // attribut « vue »
+    private vue $_vue; // attribut « vue »
 
 
      //Constructeur
@@ -22,7 +23,7 @@ class ControleurPrincipal
       //Fonction qui affiche ok
       public function afficher()
       {
-          echo"OK"; //print ok
+          echo $this->_vue->afficher() ; //affiche la page
       }
  
 
