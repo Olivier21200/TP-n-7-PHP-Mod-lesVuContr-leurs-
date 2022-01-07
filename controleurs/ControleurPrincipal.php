@@ -3,7 +3,7 @@ require_once("../vues/vue.php");
 
 class ControleurPrincipal 
 {
-    private vue $_vue = new vue() ; // attribut « vue »
+    private vue $_vue = new vue("") ; // attribut « vue »
 
 
      //Constructeur
