@@ -3,7 +3,7 @@
 include_once(__DIR__.'/database.php');
 
 /**
- * Accès à la base de données de l'IUT
+ * Accï¿½s ï¿½ la base de donnï¿½es de l'IUT
  */
 class DBIUT extends DataBase
 {
@@ -15,12 +15,12 @@ class DBIUT extends DataBase
 	 */
 	protected function __construct()
 	{
-		parent::__construct('localhost', 'grp-xxx', 'grp-xxx', 'xxxxxxxx');
+		parent::__construct('localhost', 'grp-385', 'grp-385', 'LcCEnEEy');
 		parent::connect();
 	}
 
     /**
-     * Fonction static permettant de récupérer l'instance du singleton
+     * Fonction static permettant de rï¿½cupï¿½rer l'instance du singleton
      */
     public static function getInstance()
     {
