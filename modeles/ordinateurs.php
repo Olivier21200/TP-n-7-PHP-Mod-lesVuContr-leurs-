@@ -18,7 +18,7 @@ class Ordinateurs
     }
 
     /**
-     * Récupère tous les ordinateurs du parc
+     * Rï¿½cupï¿½re tous les ordinateurs du parc
      */
     private function getAll()
     {
@@ -38,9 +38,9 @@ class Ordinateurs
     }
 
     /**
-     * Récupère l'oridnateur dont l'id est fourni
-     * @param mixed $id Id de l'ordintateur à trouver
-     * @return null|Ordinateur null ou Ordinateur récupéré
+     * Rï¿½cupï¿½re l'oridnateur dont l'id est fourni
+     * @param mixed $id Id de l'ordintateur ï¿½ trouver
+     * @return null|Ordinateur null ou Ordinateur rï¿½cupï¿½rï¿½
      */
     public function getOrdinateur($id)
     {
