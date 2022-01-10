@@ -3,6 +3,19 @@
 
     echo basename(__FILE__, ".php"); /* Returns The Current php File Name */
 
+
+
+
+
+
+
+
+
+
+
+
+
+    
     require_once('ControleurPrincipal.php'); //include de la class
 
     $Ctl = new  ControleurPrincipal(); // instancie un ControleurPrincipal.
