@@ -1,10 +1,10 @@
 <?php 
 
-require_once('../modeles/ordinateurs.php');
+require_once('/modeles/ordinateurs.php');
 
 class VueParc extends vue
 {
-    private ordinateurs $_ordinateurs;
+    private $_ordinateurs;
 
     //Constructeur de VueParc
     public function __construct(ordinateurs $ordinateurs) 
@@ -23,7 +23,7 @@ class VueParc extends vue
     {
         foreach($this->_ordinateurs as $data)
         {   
-            $data->
+            
         }
     }
 

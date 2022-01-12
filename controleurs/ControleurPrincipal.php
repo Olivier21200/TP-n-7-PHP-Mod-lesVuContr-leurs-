@@ -2,6 +2,7 @@
 require_once("vues/vue.php");
 require_once("vues/VueAccueil.php");
 require_once("vues/VueParc.php");
+require_once("modeles/ordinateurs.php");
 
 class ControleurPrincipal 
 {
@@ -19,14 +20,15 @@ class ControleurPrincipal
      public function traiterDonneesGet()
      {
         $url = $_SERVER['REQUEST_URI']; /* Returns The Current php File Name */
-        
+        $ordinateurs = new ordinateurs();
         if(strpos($url,'accueil'))
         {
             $this->_vue = new VueAccueil("accueil");
         }
-        elseif(strpos($url,'parc')
+
+        if(strpos($url,'parc'))
         {
-            $this->_vue = new VueParc("VueParc");
+            $this->_vue = new VueParc($ordinateurs);
         }
      }
 
