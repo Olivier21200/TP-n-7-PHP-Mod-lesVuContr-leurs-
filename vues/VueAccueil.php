@@ -10,6 +10,5 @@ class VueAccueil extends vue
     echo"<p>Bienvenue</p>";
  }
  
-
 }
 ?>

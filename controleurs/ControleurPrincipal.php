@@ -1,5 +1,6 @@
 <?php 
 require_once("vues/vue.php");
+require_once("vues/VueAccueil.php");
 
 class ControleurPrincipal 
 {
@@ -16,7 +17,12 @@ class ControleurPrincipal
      //Fonction qui pour le moment ne fais rien
      public function traiterDonneesGet()
      {
-       //  $this->_vue = new VueAccueil("accueil");
+        $url = $_SERVER['REQUEST_URI']; /* Returns The Current php File Name */
+        
+        if(strpos($url,'accueil'))
+        {
+            $this->_vue = new VueAccueil("accueil");
+        }
      }
 
       //Fonction qui affiche ok

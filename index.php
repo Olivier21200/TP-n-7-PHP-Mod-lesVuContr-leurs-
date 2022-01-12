@@ -5,7 +5,7 @@
 
     require_once('controleurs/ControleurPrincipal.php'); //include de la class
 
-    $vue = new vue('Accueil');
+    $vue = new vue('accueil');
     $Ctl = new  ControleurPrincipal($vue); // instancie un ControleurPrincipal.
 
     
