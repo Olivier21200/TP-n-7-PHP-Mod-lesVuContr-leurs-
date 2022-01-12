@@ -3,16 +3,10 @@
 
     echo basename(__FILE__, ".php"); /* Returns The Current php File Name */
 
-    //index.php?page={R:1}
-
-    $tabUrl = parse_url ( $_SERVER [ 'REQUEST_URI' ] ) ;
-    
-    $chaineUrl = $_SERVER['PHP_SELF']; 
-    $url = basename($chaineUrl,'test');
-    echo "Vous vous trouvez sur la page : " . $url;
-    
     require_once('controleurs/ControleurPrincipal.php'); //include de la class
 
-    $Ctl = new  ControleurPrincipal(); // instancie un ControleurPrincipal.
+    $vue = new vue('Accueil');
+    $Ctl = new  ControleurPrincipal($vue); // instancie un ControleurPrincipal.
 
+    
 ?>   
