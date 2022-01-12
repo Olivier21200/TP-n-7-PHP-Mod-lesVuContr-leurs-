@@ -1,6 +1,7 @@
 <?php 
 require_once("vues/vue.php");
 require_once("vues/VueAccueil.php");
+require_once("vues/VueParc.php");
 
 class ControleurPrincipal 
 {
@@ -22,6 +23,10 @@ class ControleurPrincipal
         if(strpos($url,'accueil'))
         {
             $this->_vue = new VueAccueil("accueil");
+        }
+        elseif(strpos($url,'parc')
+        {
+            $this->_vue = new VueParc("VueParc");
         }
      }
 

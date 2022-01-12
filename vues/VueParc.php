@@ -4,24 +4,27 @@ require_once('../modeles/ordinateurs.php');
 
 class VueParc extends vue
 {
-    private ordinateurs $ordinateurs;
+    private ordinateurs $_ordinateurs;
 
     //Constructeur de VueParc
     public function __construct(ordinateurs $ordinateurs) 
     {
-       
+       $this->_ordinateurs=$ordinateurs;
     }
 
     //Fonction qui return ordinateurs
     public function ordinateurs()
     {
-        return $this->ordinateurs;
+        return $this->_ordinateurs;
     }
 
      // affichera « Bienvenue dans le corp de la page html
     public function afficherCorps() 
     {
-        echo"<p>Bienvenue</p>";
+        foreach($this->_ordinateurs as $data)
+        {   
+            $data->
+        }
     }
 
 }
